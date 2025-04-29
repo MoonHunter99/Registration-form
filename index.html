@@ -10,29 +10,29 @@
         <p>
             Please fill out this form with the required information
         </p>
-        <form action="" method="post"> <!--please add the php file--->
+        <form action="index.php" method="post">
             <fieldset >
                 <label for="first-name">    
                     Enter Your First Name: <input type="text" id="first-name" name="first-name" placeholder="Juan" required>
                 </label>
+                <label for="middle-initial">     
+                    Enter Your Middle-initial: <input type="text" id="middle-initial" name="middle-initial" placeholder="T" required>
+                </label>
                 <label for="last-name">     
                     Enter Your Last Name: <input type="text" id="last-name" name="last-name" placeholder="Dela Cruz" required>
                 </label>
-                <label for="email"> 
-                    Enter Your Email: <input type="email" id="email" name="email" placeholder="@mail.com" required>
+                <label for="Webmail"> 
+                    Enter Your Webmail: <input type="webmail" id="webmail" name="webmail" placeholder="@iskolarngbayan.pup.edu.ph" required>
                 </label>
                 <label for="mobile-number">
                     Enter Your Mobile Number: <input type="tel" id="mobile-number" name="mobile-number" placeholder="09123456789" pattern="[0-9]{11}" required>
-                </label>
-                <label for="sex">
-                    Choose your sex:
-                    <input type="radio">Male
-                    <input type="radio">Female
                 </label>
                 <label for="birthdate"> Enter Your Birthdate: <input type="date" id="birthdate" name="birthdate" required></label>
                 <label for="new-password">
                     Create a New Password: <input type="password" id="new-password" name="new-password" pattern="[a-z0-9]{8,}" required>
                 </label>
+                <label for="confirm-password"> 
+                    Confirm Your Password: <input type="password" id="confirm-password" name="confirm-password" pattern="[a-z0-9]{8,}" required>    
             </fieldset>
             <fieldset>
                 <label for="address">
@@ -61,16 +61,6 @@
             <fieldset>
                 <label for="profile-picture">
                     Upload a profile picture: <input type="file" id="profile-picture" name="profile-picture">
-                </label>
-                <label for="age"> Input your age (years): <input type="number" id="age" name="age" min="13" max="120" required></label>
-            </fieldset>
-            <fieldset>
-                <legend>Account Type (required)</legend>
-                <label for="personal-account">
-                    <input type="radio" id="personal-account" name="account-type" class="inline" checked> Student
-                </label>
-                <label for="business-account">
-                    <input type="radio" id="business-account" name="account-type" class="inline"> Faculty
                 </label>
             </fieldset>
             <label for="terms-and-conditions">
